@@ -4,11 +4,15 @@ https://docs.google.com/document/d/1eXL2ifVqwoZNH6iIoCcF1ChKaF0AyInaxKvqtSDoQf8/
 
 https://medium.com/@lucasmaurer/git-gud-the-working-tree-staging-area-and-local-repo-a1f0f4822018
 
+git init
+
+attech new repo(link)
+
 git add .
 
 git commit -m "commit_msg"
 
-git push
+git push -u origin master
 
 git status
 

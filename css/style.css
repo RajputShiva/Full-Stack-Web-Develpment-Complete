@@ -1,0 +1,84 @@
+/* This is a External CSS */
+ /* 
+ for class -> .className
+ for id -> #idName 
+ for element -> like p tag h1 to h6 tag ...etc
+ for Universal -> * use this tag
+ */
+
+ /* Tag Selector: we are use html tags to select an element */
+/* p{
+    border: 1px solid lightblue;
+    color: blue;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+h1{
+    border: 1px dashed red;
+    color:maroon;
+    font-size: 40px;
+} */
+
+/* Class selector: it selects html elements with specific class attribute
+.class_name{
+    property: value;
+} */
+
+/* .para{
+    border: 1px dashed red;
+    color:maroon;
+    font-size: 40px;
+} */
+
+/* Id selector : it selects the HTML element with the specified id
+#id_name{
+    property:value;
+} */
+
+/* #para1{
+    border: 1px dashed red;
+    color:chocolate;
+    font-size: 40px;
+} */
+
+/* Universal selector: selcts all the HTML elements in your page 
+*{
+    property:value;
+} */
+
+*{
+    text-align: center;
+}
+
+/* Grouping Selector: used for grouping different selectors with same style 
+ it means any selectors we can use here
+ */
+
+h1, p{
+    border: 1px dashed red;
+    color:chocolate;
+    font-size: 40px;
+}
+
+/* Example: */
+
+.btn{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 20%;
+    font-size: 16px;
+}
+
+#btn-1{
+    background-color: greenyellow;
+}
+
+#btn-2{
+    background-color: yellow;
+}
+
+#btn-3{
+    background-color: red;
+}

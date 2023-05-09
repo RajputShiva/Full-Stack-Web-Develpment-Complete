@@ -82,3 +82,10 @@ h1, p{
 #btn-3{
     background-color: red;
 }
+
+/* Combinator Selector */
+/* 1. General Sibling Selector */
+
+h1 ~ p{
+    color: red;
+}

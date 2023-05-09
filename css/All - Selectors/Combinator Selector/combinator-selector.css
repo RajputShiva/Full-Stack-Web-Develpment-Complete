@@ -33,3 +33,9 @@
    color:blue;
 } */
 
+ /* 4.Descendent Selector */
+ /* targets all the descendants of an element */
+
+ div p{
+    color: red;
+ }

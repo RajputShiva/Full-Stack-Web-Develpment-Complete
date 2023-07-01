@@ -3,49 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- favicon add here -->
+    <link rel="shortcut icon" href="shivaji.jpg" type="image/x-icon">
+    <title>Shivaji Singh</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      aside{
+        width: 45%;
+        float: right;
+        text-align: center;
+        background-color: aqua;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>Shivaji Singh</h1>
-    <h2>The Creater of Shivaji</h2>
-    <img
-      src="shivaji.jpg"
-      alt="Shivaji'Image"
-      width="200px"
-      style="margin-left: 30px"
-    />
-    <p style="margin-left: 30px">A Photograph of Shivaji Singh</p>
-    <h1>Biography</h1>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, autem
-      accusamus. At a ipsum perspiciatis distinctio ducimus maiores officiis
-      autem voluptate aliquid. Totam consequuntur, rem debitis ipsam illum
-      repellendus beatae. Expedita maxime, vitae debitis magni facere inventore
-      mollitia cupiditate voluptates. Dolorem assumenda cupiditate, perferendis
-      laudantium fuga alias accusamus dolorum quis voluptas deleniti laborum
-      illo recusandae, reiciendis, maiores perspiciatis cum id?
-    </p>
-    <h1>Achievements</h1>
-    <ul>
-        <li><b>2000</b> - Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-        <li><b>2001</b> - Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-        <li><b>2002</b> - Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-        <li><b>2003</b> - Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-        <li><b>2004</b> - Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-        <li><b>2005</b> - Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-        <li><b>2006</b> - Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-        <li><b>2007</b> - Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-        <li><b>2008</b> - Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-        <li><b>2009</b> - Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-    </ul>
-    <p style="margin-left: 45px;">"One of the most influential people in the world."</p>
-    <i style="margin-left: 60px;"> -- Time Magazine <a href="#">The Famous People</a></i>
-    <h1>Resources</h1>
-    <p>Learn more about Shivaji Singh and his work:</p>
-    <ul>
+    <header>
+      <h1>Shivaji Singh</h1>
+      <p>The Creater of Shivaji</p>
+    </header>
+
+    <nav>
+      <a href="#bio">go to Biography</a><br />
+      <a href="#ach">go to Achievements</a><br />
+      <a href="#resources">go to Resources</a><br /><br />
+      <img
+        src="shivaji.jpg"
+        alt="Shivaji'Image"
+        width="200px"
+        style="margin-left: 30px"
+      />
+      <p style="margin-left: 30px">A Photograph of Shivaji Singh</p>
+    </nav>
+
+    <section>
+      <h2 id="bio">Biography</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
+        autem accusamus. At a ipsum perspiciatis distinctio ducimus maiores
+        officiis autem voluptate aliquid. Totam consequuntur, rem debitis ipsam
+        illum repellendus beatae. Expedita maxime, vitae debitis magni facere
+        inventore mollitia cupiditate voluptates. Dolorem assumenda cupiditate,
+        perferendis laudantium fuga alias accusamus dolorum quis voluptas
+        deleniti laborum illo recusandae, reiciendis, maiores perspiciatis cum
+        id?
+      </p>
+      <aside>
+        <p>
+          Expedita maxime, vitae debitis magni facere inventore mollitia
+          cupiditate voluptates. Dolorem assumenda cupiditate, perferendis
+          laudantium fuga alias accusamus dolorum quis voluptas deleniti laborum
+          illo recusandae, reiciendis, maiores perspiciatis cum.
+        </p>
+      </aside>
+    </section>
+
+    <section>
+      <h2 id="ach">Achievements</h2>
+      <ul>
+        <li>
+          <b>2000</b> - Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit.
+        </li>
+        <li>
+          <b>2001</b> - Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit.
+        </li>
+        <li>
+          <b>2002</b> - Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit.
+        </li>
+        <li>
+          <b>2003</b> - Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit.
+        </li>
+        <li>
+          <b>2004</b> - Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit.
+        </li>
+        <li>
+          <b>2005</b> - Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit.
+        </li>
+        <li>
+          <b>2006</b> - Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit.
+        </li>
+        <li>
+          <b>2007</b> - Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit.
+        </li>
+        <li>
+          <b>2008</b> - Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit.
+        </li>
+        <li>
+          <b>2009</b> - Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit.
+        </li>
+      </ul>
+      <p style="margin-left: 45px">
+        "One of the most influential people in the world."
+      </p>
+      <i style="margin-left: 60px">
+        -- Time Magazine <a href="#">The Famous People</a></i
+      >
+    </section>
+
+    <section>
+      <!-- how to set BookMark on Resources -->
+      <h1 id="resources">Resources</h1>
+
+      <p>Learn more about Shivaji Singh and his work:</p>
+      <ul>
         <li><a href="#">Wikipedia page on Shivaji Singh</a></li>
         <li><a href="#">Shivaji Singh's personal website</a></li>
         <li><a href="#">The Shivaji Kernel Archives</a></li>
-    </ul>
+      </ul>
+    </section>
+
+    <footer>
+      <p>This is the footer</p>
+    </footer>
   </body>
 </html>

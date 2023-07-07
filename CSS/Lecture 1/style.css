@@ -1,0 +1,123 @@
+              /* Simple Selectors            */
+/* Selectors :- is a way select an elements. */
+/* Element Selector :- CSS can select HTML elements by using an element's tag name.
+A tag name is the word(or character) b/w HTML angle brackets.*/
+/* Example :- */
+/* h1{
+    color: aqua;
+} */
+
+/* Class Selector :- CSS is not limited to selecting elements by tag name.
+HTML elements can have more than just a tag name; they can also have attributes.
+One common attribute is the class attribute.
+it's also possible to select an element by its class attribute.*/
+/* To select an HTML element by its class using CSS, a period(.) must be prepended to the class's name. */
+/* Example :- */
+/* .heading{
+    color: green;
+} */
+
+/* .heading123{
+   color: red;
+   background-color: aqua;
+   font-size:larger;
+}
+.heading456{
+    color: blue;
+    background-color: lightgreen;
+    font-size: small;
+ } */
+
+ /* ID Selector :- For situations where you need more specificity in styling, you may also select elements for CSS using an id attribute.
+ You can have different ids associated with a class (although a class in not required).*/
+ /* The id attribute can be added to an element, along with a class attribute.
+ On the CSS side, the delineation is made by using (#) to represent an id, the same way (.) is used for class.*/
+/* Example :- */
+/* #para{
+    color: lightblue;
+    background-color: green;
+} */
+
+                  /* -: Pseudo-Classes Selector -: */
+/* A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s).
+For example, :hover can be used to change a button's color when the user's pointer hovers over it.*/
+/* Example :- */
+/* button:hover{
+ background-color:green;
+ color: white;
+}
+
+#para1{
+    font-size: 25px;
+    background-color: aqua;
+}
+#para1:hover{
+    font-size: 30px;
+    background-color: brown;
+    color: white;
+} */
+
+/* Multiple/grouping Selector :- What if we want to add some styles to all our headings? We don't want to have redundant rules, since that would eventually become a nightmare to maintain and is not scalable at all.*/
+/* Instead, we can select multiple HTML elements in the same CSS rule by separating them with commas.*/
+/* Copying and pasting code is usually a bad idea for wev developers, and multiple selectors can help reduce that kind of behavior quit a bit.*/
+/* Example:- 
+table,th,tr,td{
+    border: 1px solid black;
+  }
+*/
+
+/* There are three ways to style in HTML using CSS :- 1. Inline Css 2. Internal Css and 3. External Css*/
+/* In three on is the best for styling in HTML :- External Css*/
+
+/* Inline Css :- To style an HTML element,you can add the style attribute directly to the opening tga.After you add the attribute, you can set it equal to the CSS style(s) you'd like applied to taht element.*/
+/* Inline styles should be avoided at all costs because they make it impossible to alter styles from an external stylesheet.*/
+/* That said,there will be many times when you need to apply styles to only a specific HTML element.For this,you should always use CSS classes instead of inline styles.*/
+
+/* Internal CSS/Style Tag :- Inline style are a fast way of styling HTML,but they also have limitations.
+If you wanted to style,for example multiple <h1> elements, you would have to add inline styling to each element manually.
+In addition,you would also have to maintain the HTML Code when additional <h1> elements are added.*/
+/* Fortunately,HTML allows you to write CSS code in its own dedicated section with the <style> element.
+CSS can be written b/w opening and closing <style> tags.
+To use the <style> element, it must be placed inside of the <head> element.*/
+
+/* External Css :- When HTML and CSS code are in separate files, the files must be linked.
+Otherwise, the HTML file won't be able to locate the CSS code, and the styling will not be applied.*/
+/* You can use the <link> element to link HTML and CSS files together.
+The <link> element must be placed within the head of the HTML file.*/
+
+/* Box Model in CSS :- The box model is the basic block of CSS.*/
+/* According to the box model concept, every element on a page is a rectangular box and may have width, height, padding, borders, and margins.*/
+/* Do div ke ya Do element ke border ke bich me agar space chahiye to margin ka use krte hain.*/
+/* padding use krne se size bad jata hain aur agar box-sizing bhi use kre padding ke sth to content ki size chhoti ho jati hain is liye box-sizing ke sth padding use na kre. */
+ /* .box{
+    height: 100px;
+    width: 100px;
+    border: 5px solid black;
+    margin: 10px;
+    // padding: 25px;
+    box-sizing: border-box;
+ }
+ #org{
+    background-color: orange;
+ }
+#wht{
+    background-color: white;
+}
+#grn{
+    background-color: green;
+} */
+
+/* Percentage :- */
+/* #div1{
+    background-color: red;
+    width: 500px;
+    height: 100px;
+}
+#div2{
+    background-color: aqua;
+    width: 10%;
+    height: 10px;
+    margin: 10px;
+    padding: 10px;
+} */
+

@@ -1,0 +1,111 @@
+/* CSS gradients :- CSS gradients let you display smooth transitions b/w two or more specified colors.*/
+/* . CSS definesthree types of gradients: 
+      . Linear Gradients (goes down/up/left/right/diagonally)
+      . Radial Gradients (defined by their center)
+      . Conic Gradients (rotated around a center point)
+*/
+/* .box{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    background-image: linear-gradient(red, blue);
+    background-image: linear-gradient(to right,red, blue);
+    background-image: linear-gradient(to bottom right,red, blue);
+    background-image: linear-gradient(270deg, red, blue);
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0),rgba(0,0,255,1));
+    background-image: linear-gradient(orange,white,green);
+} */
+/* background-image: linear-gradient()/radial-gradient(); ye kitna bhi likhe but sbse last wala ki pic hota hain sbme se.*/
+
+/* .mydiv{
+    border: 2px solid black;
+    margin: 10px;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    background-image: radial-gradient(circle,red,blue,orange);
+    background-image: radial-gradient(circle,yellow 20%,orange 30%, red 50%); 
+} */
+
+/* CSS Shadow Effects :- with CSS you can add shadow to text and to elements.
+  . Text-shadow
+  . Box-shadow
+*/
+/* Text-shadow :- The css text-shadow property applies shadow to text.
+    . You can add horizontal/Vertical shadow.
+    . Color can be added
+    . Blur can be added
+    . Multiple shadows on 1 text can be added
+    . How can we add Border using shadows ? 
+*/
+/* h1 {
+    text-shadow: 3px 3px 3px red;
+    text-shadow: 3px 3px 3px red, 5px 5px 5px green;
+} */
+
+/* Box-Shadow :- The css box-shadow property is used to apply one or more shadows to an element.
+   . Default color of shadow is text colour
+   . Color of shadow can be changed
+   . Blur can be added
+   . Spread-radius can be changed
+   . Multiple shadows can be added using comma
+*/
+/* .box {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    box-shadow: 20px 20px 15px green, 15px 15px 15px brown;
+    color: red;
+} */
+
+/* CSS Dimension Properties : 
+   .Width
+   .Height
+   .Min-height
+   .Min-width
+   .Max-height
+   .Max-width
+*/
+/* .box{
+    max-height: 100px;
+    border: 1px solid black;
+    overflow: scroll;
+} */
+
+/* .mydiv{
+    margin: 10px;
+    min-height: 50px;
+    border: 1px solid black;
+} */
+
+/* Overflow Properties :- overflow properties ko set krne ke liye mdn pr jaye.*/
+/* Overflow Properties :- auto,hidden,scroll,visible,... etc */
+/* #divi{
+    height: 50px;
+    border: 1px solid black;
+    overflow:visible;
+} */
+
+/* CSS - 2D transforms :- CSS transforms allow you to move, rotate, scale, and skew elements.
+   . With transform property you can use following methodsL
+      . translate()
+      . rotate()
+      . scaleX()
+      . scaleY()
+      . scale()
+      . skewX()
+      . skewY()
+      . skew()
+      . matrix()
+*/
+.box{
+    background-color: aqua;
+    /* transform: translate(100px,50px); */
+    /* transform: rotate(-45deg); */
+    margin: 200px;
+    transform: scale(2,5);
+    /*transform: scaleX(2);
+    transform: scaleY(4); */
+
+    transform: skew(45deg);
+}

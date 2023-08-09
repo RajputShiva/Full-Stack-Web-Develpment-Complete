@@ -7,15 +7,15 @@
 // it's return a single object.
 
 // getElementsByClassName('write class name here') :- isse hum class ko get krte hain using this method.
-// it's return a multiple object (array like).
+// it's return a multiple object (array like, not an array).
 
 // getElementsByTagName('write TagName here') :- isse hum class ko get krte hain using this method.
-// it's return a multiple object (array like).
+// it's return a multiple object (array like, not an array).
 
 // getElementsByClassName() and getElementsByTagName() :-
 // 1. both methods are use document object.
 // 2. both methods are return multiple items.
-// 3. the list returned is not an Array like.
+// 3. the list returned is not an Array bs array jaisa list return krta hain.
 
 // querySelector :- is method se bhi hum id,class and tag ko access kr skte h but ek baar me ek hi items ko access krega and agar id h to uske liye # is symple ka use krte pehle phir id ka naam likhate hain same for class.
 // iska hamesh single object output hota hain.
@@ -29,7 +29,7 @@
 // agar mujhe multiple elements ko access krna hota h to hum use krte hain querySelectorAll() and usi tarah agar mujhe ek element ko access krna hota h to me querySelector() ka use krta hu.
 
 // .innerHTML se hum elements ko get bhi kr skte hain aur set bhi kr skte hain.
-// .textContent and .innerText ye dono property .innerHTML ki tarah get and set krengi elements me.
+// .textContent and .innerText ye dono property .innerHTML ki tarah get and set krte hain elements ko.
 
 // Creating new element/content :- .createElement(); using this method hum element ko create krte hain.
 // Adding new element/content :- .appendChild(); is method se hum log jo create krte hain element ko use add krte hain using this method.
@@ -55,3 +55,33 @@
 // let newPara = document.CreateElement('p');
 // newPara.textContent = 'I am the text';
 // content.appendChild(newPara);
+
+// hum apne hisab se positioning krne ke liye ek new method hain :- insertAdjecent HTML()
+// it has to be called 2 arguments :-
+// 1. location/position , jaha tum insert krna chahte ho element ko.positioning me chaar value exist krti hain. 1.beforeBegin 2.afterBegin 3.beforeEnd 4.afterEnd
+// 2. HTML text/content , isse hum ye batate hain ki kis element ko insert krna hain.
+
+// Example :- 
+// let textToAdd = '<h3> abcd </h3>
+// let newText = document.createElement('h3');
+// newText.textContent = 'ABCD';
+// content.insertAdjacentElement('beforeBegin',newText);
+// <h3>ABCD</h3>
+
+// Remove :- .removeChild();  ye exactally opposite hain appendChild() ke.
+// hame do chij pta hona chahiye element ko remove krne ke liye , 1. hame uska parent element pata hona chahiye (parent element) 2. ye btao kis element ko remove kr rhe ho (the child to remove).
+// Example :-
+{/* <div id="new">
+      <p id="p1">Tutorix</p>
+      <p id="p2">Tutorialspoint</p>
+   </div>
+   <script>
+      var parent = document.getElementById("new");
+      var child = document.getElementById("p1");
+      parent.removeChild(child);
+   </script> */}
+
+// javascript ka use krke kaise styling krte hain css me :-
+// .style, .cssText, .setAttribute(), .className, .classList and many more ways to styling in css 
+
+// 

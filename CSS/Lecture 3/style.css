@@ -1,0 +1,40 @@
+/* Position Property */
+/* The position property specifies the type of positioning method used for an element
+(static,relative,fixed,absolute or sticky)*/
+/* static - by default element ki positioning static hi rhta hain */
+/* p{
+    position: static;
+} */
+
+/* Relative Position - An element with position,relative is positioned ralative to its normal position.*/
+/* fixed Position - An element with position fixed is positioned relative to the viewport */
+/* absolute Position - An element with position absolute is positioned relative to the nearest positioned ancestor.
+Note - Absolute positioned elements are removed from the normal flow, and can overlap elements */
+/* sticky position - An element with position sticky is positioned based on the user's scroll position.*/
+div{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border: 1px solid black;
+    display: inline-block;
+}
+#box3{
+   /* position: relative;  */
+   position: absolute;
+   top: 100px;
+   left: 50px;
+}
+
+/* #box1{
+    position: fixed;
+} */
+
+#box4{
+    position: sticky;
+    top: 0px;
+}
+.wrapper{
+    height: 1000px;
+    width: 100vw;
+    background-color: yellow;
+}

@@ -1,6 +1,6 @@
 /* CSS gradients :- CSS gradients let you display smooth transitions b/w two or more specified colors.*/
-/* . CSS definesthree types of gradients: 
-      . Linear Gradients (goes down/up/left/right/diagonally)
+/* . CSS defines three types of gradients: 
+      . Linear Gradients (goes down/up/left/right/diagonally/degree)
       . Radial Gradients (defined by their center)
       . Conic Gradients (rotated around a center point)
 */
@@ -66,6 +66,10 @@
    .Max-height
    .Max-width
 */
+/* 
+   min-height use krne pr mera content uske height se jyada hoga to wo automatically bada ho jata hain
+   lekin max-height use krne pr content max- height se jyada hone pr wo overflow krne lgta hain.
+ */
 /* .box{
     max-height: 100px;
     border: 1px solid black;
@@ -80,11 +84,11 @@
 
 /* Overflow Properties :- overflow properties ko set krne ke liye mdn pr jaye.*/
 /* Overflow Properties :- auto,hidden,scroll,visible,... etc */
-/* #divi{
+#divi{
     height: 50px;
     border: 1px solid black;
     overflow:visible;
-} */
+}
 
 /* CSS - 2D transforms :- CSS transforms allow you to move, rotate, scale, and skew elements.
    . With transform property you can use following methodsL
@@ -103,8 +107,8 @@
     /* transform: translate(100px,50px); */
     /* transform: rotate(-45deg); */
     margin: 200px;
-    transform: scale(2,5);
-    /*transform: scaleX(2);
+    transform: scale(2,4);
+    /* transform: scaleX(2);
     transform: scaleY(4); */
 
     transform: skew(45deg);

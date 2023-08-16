@@ -1,0 +1,68 @@
+/* Grid Properties :-
+    . Justify-content
+    . Align-content
+    . Justify-items
+    . Align-items
+    . Justify-self
+    . Align-self
+    . Place-items - ye ek shorthand notation hain justify and align ke liye
+    . Place-self - justify self and align self ke liye place-self shorthand notation ka use krte hain
+*/
+
+/* in dono ki jagah "justify-content: center; align-content: center;" ye likh skte hain "place-content: center;" */
+
+/* in dono ki jagah "justify-items: center; align-items: center;" ye likh skte hain  "place-items: center;" */
+
+.container{
+    border: 1px solid brown;
+    background-color: yellow;
+    height: 700px;
+    width: 600px;
+
+    display: grid;
+    /* gap: 10px; */
+
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+
+    /* justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly; */
+
+    /* align-items: start;
+    align-items: end;
+    align-items: center;
+    align-items: baseline;
+    align-items: stretch; */
+
+    /* align-content: space-between;
+    align-content: space-evenly;
+    align-content: space-around; */
+
+    /* justify-content: center;
+    align-content: center; */
+
+    /* place-content: center; */
+
+    /* justify-items: center;
+    align-items: center; */
+
+    place-items: center;
+}
+
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+}
+
+#box1{
+    /* justify-self: start;
+    justify-self: end;
+    justify-self: center; */
+
+    /* align-self: center; */
+
+}

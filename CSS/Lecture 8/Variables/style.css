@@ -1,0 +1,20 @@
+:root{
+    /* jb hum kisi root element ke undar variable define krte hain to us variable ka scope globle hota hain */
+    --dark-red:#981a2c
+}
+.container{
+    border: 1px solid brown;
+    background-color: green;
+    height: 300px;
+    width: 300px;
+    background-color: var(--dark-red);
+}
+
+.box{
+    border: 2px solid green;
+    background-color: aqua;
+    /* hum jb bhi variables ka use krenge to hame "--" pehale iska use krna padega aur variable ke liye "var" likhna padega aur ise hum local variable kahate hain */
+    --dark-red:#981a2c;
+    color: var(--dark-red);
+    
+}

@@ -1,0 +1,59 @@
+/* Animation creat krne ke two ways 1.Transitions and 2.Animation & Keyframes: */
+/* Transitions in CSS:
+   . Transition timing
+   . Transition function
+   . Transition delay
+   . Transition property
+*/
+
+/* Animation & Keyframes:
+   . animation-name
+   . animation-duration
+   . animation-iteration-count
+   . animation-fill-mode
+   . animation-timing-function
+   . animation-delay
+   . animation-direction
+*/
+
+.container{
+   height: 500px;
+   width: 500px;
+   background-color: green;
+   border: 3px solid red;
+   display: flex;
+}
+
+.box{
+   height: 150px;
+   width: 150px;
+   margin: 20px;
+   border: 2px solid orange;
+   background-color: aqua;
+
+   /* transition: 2s; */
+
+   /* transition-property: background-color; */
+
+   /* transition-property: all;
+   transition-delay: 5s; */
+
+   /* transition shorthand property:- transition - property-duration-transition timing function-deyal */
+
+   /* transition: background-color 1s ease 2s; */
+   /* transition: transform 1s ease 2s; */
+
+   /* transition: all 5s ease 1s; */
+
+   /* transition: transform 3s ease-in;
+   transition: transform 3s ease-out; */
+
+   transition: transform 3s cubic-bezier(1, -0.09, 0, 1.68);
+}
+
+.box:hover{
+   /* background-color: brown;
+   transform: rotate(45deg); */
+
+   transform: translateX(500px);
+}

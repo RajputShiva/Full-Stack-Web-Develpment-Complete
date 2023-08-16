@@ -1,0 +1,96 @@
+/* Media Queries :
+   . Viewport - the area of the window in which web content can be seen. We use the dimensions of the viewport
+     (usually the width, but sometimes the height) as the basis of our media queries.
+   . Media queries are used to set different style rules for different devices or sized screens.
+     We use breakpoints to set the condition of a media query. The logo is : @media(feature:value)
+   . Essentially, media query breakpoints are pixel values that a developer/designer can define in CSS.
+     When a responsive website reaches those pixel values, a transformation (such as the one detailed above) occurs so that the website offers an optimal user experience. 
+ */
+
+ /* Multiple BreakPoints :- */
+/*
+ Anything smaller than first breakpoint 600px 
+ .container{
+    // rules for small screen
+ }
+
+ Mediam Screens:-
+ @media (min-width: 600px) and (max-width: 900px) {
+    .container{
+       // rules for medium-sized screen
+    }
+ }
+
+ Large Screens :-
+ @media (min-width: 901px) {
+    .container{
+        // rules for large screen
+    }
+ }
+*/
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+ .container{
+    border: 1px solid black;
+    background-color: yellow;
+    height: 700px;
+    width: 504px;
+  
+    display: grid;
+    gap: 4px;
+  
+    grid-template-rows: 30px 1fr 30px;
+    grid-template-columns: 100px 400px;
+  
+    grid-template-areas: 
+    "hd hd"
+    "side main"
+    "ft ft";
+  
+  }
+  
+  .box{
+    border: 1px solid red;
+    background-color: aqua;
+  }
+  
+  #header{
+      grid-area: hd;
+  }
+  
+  #sidebar{
+      grid-area: side;
+  }
+  
+  #content{
+      grid-area: main;
+  }
+  
+  #footer{
+      grid-area: ft;
+  }
+
+  /* @media(max-width:400px){
+    .container{
+        gap: 100px;
+    }
+  } */
+
+  @media(max-width:350px){
+    .container{
+        grid-template-rows: 30px 1fr 1fr 30px;
+        grid-template-columns: 1fr;
+
+        gap: 2px;
+
+        grid-template-areas: 
+        "hd hd"
+        "side main"
+        "ft ft";
+    }
+  }

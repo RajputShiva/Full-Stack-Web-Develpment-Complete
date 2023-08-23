@@ -1,0 +1,232 @@
+Bootstrap v4:-
+. Most Popular Fontend framework
+. For building responsive sites
+. Boostrap, originally named Twitter Blueprint, was developed by Mark Otto
+  and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools.
+
+Boostrap = (Grid System + Classes + Components)
+
+Boostrap Documentation is the best place for reference
+
+CDN - Content Delevary Network
+
+Boostrap Grid System :-
+1. Breakpoint
+2. Container
+3. Row
+4. Column
+
+1. Breakpoint :-
+   Breakpoint              Class infix             Dimensions        Container Width
+   X-small           :         -          :        Opx - 575px             Auto
+   Small             :         sm         :        576px - 767px          540px
+   Medium            :         md         :        768px - 991px          720px
+   Large             :         lg         :        992px - 1199px         960px
+   Extra Large       :         xl         :          >= 1200px            1140px
+
+2. Container :-
+   Wrapper that contain the website 
+   Website width depends on wrapper width
+
+   Example : Compare
+   https://passwordsgenerator.net/
+   And
+   https://www.lastpass.com/password-generator
+
+3. Row :-
+   Row is a div which contain columns
+   Div with column class must be in a row parent. col div cannot be inside a col div.
+   When ever you define a div with row class it divide that div in 12 columns
+
+   <div class="container">
+       <div class="row"></div>
+    </div>
+
+    It is divided into 12 columns
+
+4. Column = Grid
+   columns(Classes)
+
+   col-1 - iska mtlb 12 columns banega 1 aur 1 ka = 12  
+
+   col-2 - iska mtlb 6 columns banega 2 aur 2 ka = 12
+
+   col-3 - iska mtlb 4 columns banega 3 aur 3 ka = 12
+
+   col-4 - iska mtlb 3 columns banega 4 aur 4 ka = 12
+
+   col-6 - iska mtlb 2 columns banega 6 aur 6 ka = 12
+
+   col-8 and col-4 - iska mtlb 2 columns banega ek 8 ka aur dusra 4 ka = 12
+
+   <div class="col-12"></div> - iska mtlb 1 columns banega 12 ka = 12
+
+   [ col-*     ] col - 12
+   [ col-sm-*  ]
+   [ col-md-*  ] col-md-7
+   [ col-lg-*  ]
+   [ col-xl-*  ]
+
+   jaha *(star) lga hain waha waha number dete hain
+
+Boostrap Flow :-
+container > row > column > Content (text and images kuch bhi ho skta hain)
+
+row, column aur Content dono ke undar ho skta hain lekin column, column ke under nhi ho skta hain
+
+what is a responsive Design?
+- Responsive Web design is the approoach that suggests that design and development should respond to the user's behavior and environment based on
+  screen size, platform and orientation.
+- The practice consists of a mix of flexible grids layouts, images and an intelligent use of css media queries.
+
+Boostrap Container layouts
+- Container are the most basic layout element in Boostrap.
+- Container are used to pad the content inside of them.
+- There are two container classes available.
+- The .Container class provides a responsive fixed width container
+- The .Container-fluid class provides a full width container, spanning the entire width of the viewport.
+
+Container-fluid
+- width is always 100%
+Container
+- Dimensions of fixed container
+
+Boostrap Grid Feartures
+- Bootstrap's grid system allows up to 12 columns across the page.
+- Rows
+- Columns
+- Supports various creen resolutions like xs, sm, md, lg, xl, xxl
+
+Grid col class for different Breakpoints
+- xl  - col-xl-*
+- lg  - col-lg-*
+- md  - col-md-*
+- sm  - col-sm-*
+- xs  - 
+
+Offset ka mtlb hota hain ki ek row me 12 column hote ab usme se jaise me .col-md-4 to ye starting se aayega but agar me 
+isse pehale .offset-md-3 lga dita to 3 col chhod ke .col-md-4 start hoga
+
+Offset Class for different Breakpoints
+- xl  - offset-xl-*
+- lg  - offset-lg-*
+- md  - offset-md-*
+- sm  - offset-sm-*
+- xs  - 
+
+* - 0 se 11 number tk lga skte hain 
+
+uper wala responsive ke liye use krte hain 
+aur niche wala without responsive ke liye
+- offset-*
+* 1 se 12 number tk lga skte hain 
+
+Reordering iska mtlb position change krna hota hai.
+First and Last Order Class for different Breakpoint
+- xl  - .order-xl-first, .order-xl-last
+- lg  - .order-lg-first, .order-lg-last
+- md  - .order-md-first, .order-md-last
+- sm  - .order-sm-first, .order-sm-last
+- xs  - 
+
+Reordering Classes for different Breakpoint
+- xl  - .order-xl-*
+- lg  - .order-lg-*
+- md  - .order-md-*
+- sm  - .order-sm-*
+- xs  - 
+
+* 0 se 12 number tk lga skte hain
+
+Margin teen hain - mr-auto(means margin right), m-auto(means margin center), ml-auto(means margin left)
+
+Margin Auto Classes for different Break Points
+- xl  - .m-xl-auto
+- lg  - .m-lg-auto
+- md  - .m-md-auto
+- sm  - .m-sm-auto
+- xs  - 
+
+Margin Classes for different Sides
+- Margin         - .m-*  (charo side se margin lgta hain)
+- Margin-right   - .mr-*
+- Margin-left    - .ml-*
+- Margin-top     - .mt-*
+- Margin-bottom  - .mb-*
+
+* 0 se 5 tb number likh skte hain
+
+Margin Classes for different Break Points
+          Margin            Margin-right               Margin-left               Margin-top                Margin-bottom
+- xl  -   .m-xl-*              .mr-xl-*                   .ml-xl-*                .mb-xl-*
+- lg  -   .m-lg-*              .mr-lg-*                   .ml-lg-*                .mb-lg-*
+- md  -   .m-md-*              .mr-md-*                   .ml-md-*                .mb-md-*
+- sm  -   .m-sm-*              .mr-sm-*                   .ml-sm-*                .mb-sm-*
+- xs  -
+
+* 0 se 5 tb number likh skte hain
+
+Negative Margin Classes for different Break Points
+          Margin            Margin-right               Margin-left               Margin-top                Margin-bottom
+- xl  -   .m-xl-n*              .mr-xl-n*                   .ml-xl-n*                .mt-xl-n*               .mb-xl-n*
+- lg  -   .m-lg-n*              .mr-lg-n*                   .ml-lg-n*                .mt-lg-n*               .mb-lg-n*
+- md  -   .m-md-n*              .mr-md-n*                   .ml-md-n*                .mt-md-n*               .mb-md-n*
+- sm  -   .m-sm-n*              .mr-sm-n*                   .ml-sm-n*                .mt-sm-n*               .mb-sm-n*
+- xs  -
+
+* 0 se 5 tb number likh skte hain
+
+Padding Classes for different Sides
+- Margin         - .p-*  (charo side se margin lgta hain)
+- Margin-right   - .pr-*
+- Margin-left    - .pl-*
+- Margin-top     - .pt-*
+- Margin-bottom  - .pb-*
+
+* 0 se 5 tb number likh skte hain
+
+Padding Classes for different Break Points
+          Margin            Margin-right               Margin-left               Margin-top                Margin-bottom
+- xl  -   .p-xl-*              .pr-xl-*                   .pl-xl-*                .pt-xl-*                    .pb-xl-*
+- lg  -   .p-lg-*              .pr-lg-*                   .pl-lg-*                .pt-lg-*                    .pb-lg-*
+- md  -   .p-md-*              .pr-md-*                   .pl-md-*                .pt-md-*                    .pb-md-*
+- sm  -   .p-sm-*              .pr-sm-*                   .pl-sm-*                .pt-sm-*                    .pb-sm-*
+- xs  -
+
+* 0 se 5 tb number likh skte hain
+
+Horizontal alignment ke liye hum use krte hain ye property
+row me use krte, column ke parent me justify-content-start/center/end/between/around
+
+Justify-content Classes for different Break Points
+               Start                                     end                                    Center                                          Between                                       Around
+- xl  - .justify-content-xl-start              .justify-content-xl-end                 .justify-content-xl-center                      .justify-content-xl-between                   .justify-content-xl-around
+- lg  - .justify-content-lg-start              .justify-content-lg-end                 .justify-content-lg-center                      .justify-content-lg-between                   .justify-content-lg-around
+- md  - .justify-content-md-start              .justify-content-md-end                 .justify-content-md-center                      .justify-content-md-between                   .justify-content-md-around
+- sm  - .justify-content-sm-start              .justify-content-sm-end                 .justify-content-sm-center                      .justify-content-sm-between                   .justify-content-sm-around
+- xs  - 
+
+Vartical alignment ke liye hum use krte hain ye property
+row me use krte, column ke parent me align-items-start/center/end/strech/baseline
+
+               Start                               end                                 Center                                      Baseline                                   Stretch
+- xl  - .align-items-xl-start              .align-items-xl-end                 .align-items-xl-center                      .align-items-xl-baseline                   .align-items-xl-strech
+- lg  - .align-items-lg-start              .align-items-lg-end                 .align-items-lg-center                      .align-items-lg-baseline                   .align-items-lg-strech
+- md  - .align-items-md-start              .align-items-md-end                 .align-items-md-center                      .align-items-md-baseline                   .align-items-md-strech
+- sm  - .align-items-sm-start              .align-items-sm-end                 .align-items-sm-center                      .align-items-sm-baseline                   .align-items-sm-strech
+- xs  - 
+
+Vartical alignment ke liye hum use krte hain ye property
+row me use krte, column ke parent me align-content-start/center/end/strech/between/around
+
+isme bhi same upar jaise sare sizes me follow hoga 
+.lign-items ke jagah .align-content hoga aur ye align-content-start/center/end/strech/between/around saaro pe use hoga saari sizes
+
+Vartical alignment ke liye hum use krte hain ye property
+row me use krte, column ke parent me align-self-start/center/end/strech/baseline/auto
+
+auto lgate h to ye apne parent ke anushar work krti hain jo parent me property lgi hogi uske anushar
+
+isme bhi same upar jaise sare sizes me follow hoga 
+.lign-items ke jagah .align-self hoga aur ye align-self-start/center/end/strech/baseline/auto saaro pe use hoga saari sizes
+

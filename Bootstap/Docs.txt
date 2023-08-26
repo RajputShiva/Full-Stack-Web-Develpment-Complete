@@ -230,3 +230,400 @@ auto lgate h to ye apne parent ke anushar work krti hain jo parent me property l
 isme bhi same upar jaise sare sizes me follow hoga 
 .lign-items ke jagah .align-self hoga aur ye align-self-start/center/end/strech/baseline/auto saaro pe use hoga saari sizes
 
+Flex-direction Classes :-
+row - flex-row(bydefault yahi rhta hain), flex-row-reverse
+column - flex-column, flex-column-reverse
+flex-wrap(bydefault yahi rhta hain), flex-nowrap,flex-wrap-reverse
+(upar ki saari property apne parent pr apply hoti hain)
+
+Flex Fill Class :-
+flex-fill kisi column pe lgane se uski width 100% ho jati hain
+ye us column pr lgegi jiska koi width define na ho
+
+Flex direction Classes for different Breakpoints
+           flex-row                  flex-row-reverse
+- xl  -  .flex-xl-row              .flex-xl-row-reverse
+- lg  -  .flex-lg-row              .flex-lg-row-reverse
+- md  -  .flex-md-row              .flex-md-row-reverse
+- sm  -  .flex-sm-row              .flex-sm-row-reverse
+- xs  - 
+same upar ki tarah niche ki property pr bhi use hota hain.
+flex-column, flex-column-reverse, flex-wrap, flex-nowrap
+
+Display Utilities :-
+Display: none; ke liye Boostrap me ek class ata hain .d-none isse Display, desable ho jata hain.
+
+Same for everyone in below,
+Display:none;              >   .d-none
+Display:inline;            >   .d-inline
+Display:inline-block;      >   .d-inline-block
+Display:block;             >   .d-block
+Display:table;             >   .d-table
+Display:table-cell;        >   .d-table-cell
+Display:table-row;         >   .d-table-row
+Display:flex;              >   .d-flex
+Display:inline-flex;       >   .d-inline-flex
+
+Display Classes for different Breakpoints
+         display:none            display:flex
+- xl  -  .d-xl-none              .d-xl-flex
+- lg  -  .d-lg-none              .d-lg-flex
+- md  -  .d-md-none              .d-md-flex
+- sm  -  .d-sm-none              .d-sm-flex
+- xs  -  .d-none                 .d-flex
+
+Same upar wale ke jaise ye niche bhi follow hoga.
+Display:inline-block/block/table/table-cell/table-row/flex/inline-flex
+
+ek Print property bhi hoti hain agar use jyada janna hain to Boostrap Docs pdh le
+
+Display Classes for different Breakpoints
+          float:left
+- xl  -  .float-xl-left
+- lg  -  .float-lg-left
+- md  -  .float-md-left
+- sm  -  .float-sm-left
+- xs  -  .float-left
+
+Same upar wale ke jaise ye niche bhi follow hoga.
+float:left/right/none
+
+Width Classes :-
+Boostrap me width define krne ke liye bhi class hota hain
+- w-25   means    width 25% hota hain
+- w-50   means    width 50% hota hain
+- w-75   means    width 75% hota hain
+- w-100  means    width 100% hota hain
+- w-auto means    width auto hota hain
+
+Same height ke liye bhi aise hi hota hain
+Height Classes :-
+Boostrap me height define krne ke liye bhi class hota hain
+- h-25   means    height 25% hota hain
+- h-50   means    height 50% hota hain
+- h-75   means    height 75% hota hain
+- h-100  means    height 100% hota hain
+- h-auto means    height auto hota hain
+ek aur class hain maximum heigh ke liye -> mh-100
+
+Viewport Height & Width Classes :-
+- vh-100 , min-vh-100 /  vw-100, min-vw-100
+
+Position Classes :-
+position:relative;       ->      .position-relative
+position:absolute;       ->      .position-absolute
+position:static;         ->      .position-static
+position:fixed;          ->      .position-fixed
+position:sticky;         ->      .position-sticky
+
+ye upar wali classes itna impotant nhi h jitna ki niche ki hain
+.fixed-top
+.fixed-bottom
+.sticky-top
+
+Overflow Classes :-
+.overflow-auto (ye property tabhi km krti h jb height liye ho tb)
+.overflow-hidden
+
+Padding & Margin Classes - || :-
+Y-axis se Padding dene ke liye - .py-*  (0 to 5)
+X-axis se Padding dene ke liye - .px-*  (0 to 5)
+
+Y-axis se Margin dene ke liye - .my-*  (0 to 5)
+X-axis se Margin dene ke liye - .mx-*  (0 to 5)
+
+agar jo bydefault 15 px ka padding aur margin hota pehale se 
+use nhi use krne ke liye hum ek class ka use krte hain - .no-gutters aur ye parent(row) me lgta hain
+
+Padding & Margin for different Breakpoints
+          Padding Y
+- xl  -  .py-xl-*
+- lg  -  .py-lg-*
+- md  -  .py-md-*
+- sm  -  .py-sm-*
+- xs  - 
+
+Same isi tarah se Padding X pe bhi aur Margin  Y/X 
+* ke jagah pr 0 se 5 tk ka number 
+
+Background Color Classes
+.bg-primary, .bg-secondary, .bg-success, .bg-danger, .bg-warning, .bg-info, .bg-light, .bg-dark, .bg-white, .bg-transparent 
+
+Color Classes
+.text-primary, .text-secondary, .text-success, .text-danger, .text-warning, .text-info, .text-light, .text-dark, .text-white, .text-body, text-muted, .text-black-50, .text-white-50
+
+Text Align Classes
+text-align:left        ->     .text-left
+text-align:right       ->     .text-right
+text-align:center      ->     .text-center
+text-align:justify     ->     .text-justify
+
+Text Align Classes for different Breakpoints
+            Left
+- xl  -  .text-xl-left
+- lg  -  .text-lg-left
+- md  -  .text-md-left
+- sm  -  .text-sm-left
+- xs  -  .text-left
+
+Same isi tarah right/center follow krenge
+
+Text Transform Classes / Font Weight Classes ye sb ko use krne ke liye Boostrap docs ko dekh le
+
+Anchor Tag Formatting Classes
+text-decoratin:none;    ->    .text-decoratin-none
+.text-reset likhne se anchor(a) ka color wahi ho jayega jo uske parent ka hain
+
+Wrapping & Long Text Formatting Classes
+.text-nowrap
+.text-truncate
+.text-break
+in sbko pdhne ke liye Boostrap docs ko dekhe
+
+Font Size Classes
+.display-1
+.display-2
+.display-3
+.display-4
+.lead
+
+List Style Classes
+.list-unstyled (ye unorder list hain)
+<ul> .list-inline(same line me content aa jayega)
+<li> .list-inline-item
+
+BlockQuote Classes:-
+<blockquote class="blockquote">
+  " content"
+  <footer class="blockquote-footer"> --Cory Booker </footer>
+</blockquote>
+
+User Select Classes :-
+.uer-select-all
+.user-select-auto
+.user-select-none
+
+Button Classes :-
+class ="btn" for the button color  class="btn btn-primary"
+isi tarah bhut sare btn and color h isko janne ke liye docs pdhne
+Outline Button Classes
+class="btn outline-colorname"  isse button ka outline aayega aise bhi bhut sare hain outline insbko dekhe docs me
+
+Button sizes
+- lg    .btn-lg
+- md     ye bydefault rhta hain
+- sm    .btn-sm
+class="btn btn-lg" aise hi use krte hain
+
+.btn-block se jitna width define kiye rhte hain utna bada button bn jayega
+class="btn btn-block"
+
+button ke sath .active se but active rhega aur .disable se button disable ho jayega
+
+Groud Button Classes
+class="btn-group"
+Group Button sizes Classes
+- lg    .btn-group-lg
+- md     ye bydefault rhta hain
+- sm    .btn-group-sm
+
+Groud Button Toolbar Class
+button ka parent banana ha 
+<div class="btn-toolbar">
+   <div class="btn-group">
+   iske undar sari button likh skte hain jitna hum chahe
+   </div>
+   <div class="btn-group">
+   iske undar sari button likh skte hain jitna hum chahe
+   </div>
+</div>
+
+Vertical Group Button Classes
+<div class="btn-group-vertical">
+   <div class="btn-group">
+   iske undar sari button likh skte hain jitna hum chahe
+   </div>
+   <div class="btn-group">
+   iske undar sari button likh skte hain jitna hum chahe
+   </div>
+</div>
+isme vertical button bnta hain ise use krne pr
+
+Group Nesting Button Classes
+<div class="btn-group">
+   <button type="button" class="btn btn-success dropdown-toggle"data-toggle="dropdown"></button>
+   <div class="dropdown-menu">
+   <a class="dropdown-item" href="#">Dropdown Link 1</a>
+   <a class="dropdown-item" href="#">Dropdown Link 1</a>
+  </div>
+</div>
+
+List Group Class
+<ul class="list-group">
+   <li class="list-group-item">List Item One</li>
+   <li class="list-group-item">List Item Two</li>
+   <li class="list-group-item">List Item Three</li>
+   <li class="list-group-item">List Item Four</li>
+</ul>
+
+upar se line hatane ke liye use krte hain ye niche wala
+
+<ul class="list-group list-group-flush">
+   <li class="list-group-item">List Item One</li>
+   <li class="list-group-item">List Item Two</li>
+   <li class="list-group-item">List Item Three</li>
+   <li class="list-group-item">List Item Four</li>
+</ul>
+
+List Group Color Classes
+isme bhut se property h isi liye ise use krne ke liye docs pdhe
+
+List Group Horizontal Class
+<ul class="list-group list-group-horizontal">
+   <li class="list-group-item">List Item One</li>
+   <li class="list-group-item">List Item Two</li>
+   <li class="list-group-item">List Item Three</li>
+   <li class="list-group-item">List Item Four</li>
+</ul>
+ise responsive krne ke liye use krte hain
+.list-group-horizontal-{sm|md|lg|xl}
+
+List Group with Links & Buttons
+<div class="list-group">
+   <a class="list-group-item list-group-item-action">List Item One</a>
+   <a class="list-group-item list-group-item-action">List Item One</a>
+</div>
+
+Table Classes:-
+<table class="table">
+   table ko docs se pdhe
+
+   link of this class - https://www.youtube.com/watch?v=OHZlWNGie1E&list=PL0b6OzIxLPbz1cgxiH5KCBsyQij1HsPtG&index=27
+
+</table>
+
+<table class="table table-dark">
+   background dark krne ke liye use krte hain
+</thead>
+
+<table class="table table-dark table-borderless">
+   background dark krne ke liye use krte hain without border
+</thead>
+ 
+<table class=" table table-striped">
+   table row ko styling krne ke liye
+</table>
+
+Table Heading Classes
+<thead class="thead-dark">
+
+</thead>
+
+Table Row Color Classes
+row ko color krne ke liye use krte hain
+
+Responsive Table Classes
+<div class="table-responsive">
+  <table class="table">
+   table details write here
+  </table>
+</div>
+
+another way to make responsive
+.table-responsive-{sm|md|lg|xl}
+
+Pagination Classes
+ispe bhi active lgayenge wo active dikhega
+<li class="page-item active"><a href="#" class="page-link">2</a></li>
+none clickable
+<li class="page-item disabled"><a href="#" class="page-link">2</a></li>
+<nav>
+  <ul class="pagination">
+    <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+    <li class="page-item"><a href="#" class="page-link">1</a></li>
+    <li class="page-item"><a href="#" class="page-link">2</a></li>
+    <li class="page-item"><a href="#" class="page-link">3</a></li>
+    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+  </ul>
+</nav>
+
+Breadcrumbs Class
+<nav>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active"><a href="#">Data</a></li>
+  </ol>
+</nav>
+
+Form Classes
+.form-group
+<div class="container">
+      <h2 class="py-3 text-center">Bootstrap 4 From Classes</h2>
+      <div class="row py-3">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+      </div>
+    </div>
+aise hi form create krte hain Bootstrap me
+
+Form Input Sizes Classes
+default size ke liye -> .form-control
+lg size ke liye -> .form-control-lg
+sm size ke liye -> .form-control-sm
+
+Fill
+.form-group
+type="file"
+.form-control-file
+
+Range
+.form-group
+type="range"
+.form-control-range
+
+Check Box
+.form-Check
+type="checkbox
+.form-check-input
+.form-check-label
+
+Inline Form Classes
+<div class="container">
+      <h2 class="py-3 text-center">Inline & Horizontal From Classes</h2>
+      <div class="row py-3">
+        <div class="col">
+            <form action="" class="form-inline">
+               <div class="form-group">
+                <label for="" class="sr-only">User Name</label>
+                <input type="text" class="form-control" placeholder="User Name">
+               </div>
+               <div class="form-group mx-sm-3">
+                <label for="" class="sr-only">Password</label>
+                <input type="password" class="form-control" placeholder="Password">
+               </div>
+               <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+      </div>
+    </div>
+
+Inline checkbox or Radio Button Classes
+read docs for this property
+
+Horizontal Form Classes :-
+read docs for this property
+
+Form Custom Classes :-
+read docs for this property
+link of this class - https://www.youtube.com/watch?v=yXdp5rqSx4I&list=PL0b6OzIxLPbz1cgxiH5KCBsyQij1HsPtG&index=32
+
+Input Group Classes
+read docs for this property
+link of this class - https://www.youtube.com/watch?v=z3tv0CykXb0&list=PL0b6OzIxLPbz1cgxiH5KCBsyQij1HsPtG&index=33
+
+

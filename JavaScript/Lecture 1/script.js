@@ -1,4 +1,4 @@
-// console.log('hello world');
+console.log('hello world');
 
 // let a = 5;
 // a = 'shiavji';
@@ -16,7 +16,7 @@
 
 // object
 // let person = {
-//     firstNmae = 'shivaji'
+//     firstNmae = 'shivaji',
 //     age = 24;
 // }
 
@@ -32,10 +32,30 @@
 
 // let names = ['love','shivaji','golu'];
 
-// loose equality :-  == (ye btata h kiapka value same hoga tabhi chala jayega)
+// loose equality :-  == (ye btata h ki apka value same hoga tabhi chala jayega)
 // strict equality :-  === (ye btata h ki apka data and value dono same hona chahiye)
 
+// Ternary Operator
+// let age = 20;
+// let status = (age >= 18) ? 'Yes Vote' : 'No Vote';
+// console.log(status);
 
+// Loop for
+// for(let i =1; i<=5; i+=1){
+//     console.log(i,'Shivaji Singh');
+// }
 
+// while
+// let i=0;
+// while(i<10){
+//     console.log(i);
+//     i++;
+// }
 
+// do while
+// let i=0;
+// do {
+//     console.log(i);
+//     i++;
+// } while(i<10);
 

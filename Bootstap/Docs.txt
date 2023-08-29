@@ -626,4 +626,13 @@ Input Group Classes
 read docs for this property
 link of this class - https://www.youtube.com/watch?v=z3tv0CykXb0&list=PL0b6OzIxLPbz1cgxiH5KCBsyQij1HsPtG&index=33
 
+Navs(Navigation) Classes
+read docs for this property
+link of this class - https://www.youtube.com/watch?v=9g_95uKXKM0&list=PL0b6OzIxLPbz1cgxiH5KCBsyQij1HsPtG&index=34
+
+Navbar Classes
+read docs for this property
+link of this class - https://www.youtube.com/watch?v=AvFVoDoy18s&list=PL0b6OzIxLPbz1cgxiH5KCBsyQij1HsPtG&index=35
+
+
 

@@ -14,7 +14,21 @@ console.log('chaliye shuru krte hain');
 //   },
 // };
 
-// factory function
+// factory function :- is function se object create hote hain
+
+// function createRectangle() {
+//     let rectangle = {
+//         length: 1,
+//         breadth: 2,
+      
+//         draw: function () {
+//           console.log("drawing rectangle");
+//         },
+//       };
+//       return rectangle;
+// }
+
+// upar ka function niche ke tarike se bhi likh skte hain
 
 // function createRectangle(len, bre) {
 //   return rectangle = {
@@ -37,7 +51,11 @@ console.log('chaliye shuru krte hain');
 // rectangle.draw();
 
 // Camelcase Notation -> numberOfStudents  is tarah likhte h camelcase me.
-// constructor function -> Pascal Notation -> first letter of every word is Capital -> NumberOfStudents
+
+// Constructor function :-
+
+// Pascal Notation -> first letter of every word is Capital -> NumberOfStudents
+
 // function Rectangle(len,bre){
 //    this.length = len;
 //    this.breadth = bre;
@@ -47,8 +65,12 @@ console.log('chaliye shuru krte hain');
 // }
 
 //object creation using constructor function
+
 // new keyword hame ek impty objct create kr ke deta hain.
+
 // let rectangleObject = new Rectangle(4,6);
+
+//  Dynamic Nature of Objects :-
 
 // rectangleObject.color = 'yellow';
 // console.log(rectangleObject);
@@ -56,7 +78,7 @@ console.log('chaliye shuru krte hain');
 // delete rectangleObject.color;
 // console.log(rectangleObject);
 
-// `` this is the backtick charactor
+// `` this is the back-tick charactor
 
 // function Rectangle(len,bre){
 //   this.length = len;
@@ -68,8 +90,8 @@ console.log('chaliye shuru krte hain');
 
 // let Rectangle1 = new Function('length','breadth',
 // `this.length = length;
-// this.breadth = breadth;
-// this.draw = function(){
+//  this.breadth = breadth;
+//  this.draw = function(){
 //  console.log('drawing');
 // }`);
 
@@ -83,8 +105,11 @@ console.log('chaliye shuru krte hain');
 // console.log(a);
 // console.log(b);
 
-//  Primitive are capied by their value.
+// Primitive are capied by their value.
 // References are capied by their address/reference.
+
+// Primitive - Number, String, Boolean, Undefined, Null, Symbol
+// Reference - Function, Object, Arrays
 
 // let a = {value: 10};
 // let b = a;
@@ -92,6 +117,7 @@ console.log('chaliye shuru krte hain');
 // console.log(a.value); = 11
 // console.log(b.value); = 11
 
+// jb kisi primitive ko function me pass krte hain to waha pr us primitive ki copy bnti hain.
 // let a = 10;
 // function inc(a){
 //   a++;
@@ -110,19 +136,22 @@ console.log('chaliye shuru krte hain');
 //   length:2,
 //   breadth:4
 // };
-// for-in loop -> ye object ke liye use krte hain
+
+// for-in loop :-> ye object ke liye use krte hain
+
 // for (const key in rectangle) {
 //   // keys are reflected through 'key' variable
 //   // values are reflected through rectangle[key]
 //   console.log(key,rectangle[key]);
 // }
 
-// for-of loop -> ye iteration ke liye use krte hain (Array ,map)
+// for-of loop -> ye iteration ke liye use krte hain (Array, map)
+
 // for (const key of Object.keys(rectangle)) {
-//   console.log(key); // keys se key print hoga 
+//   console.log(key); // object.keys se pura key ko print kr skte hain
 // }
 // for (const key of Object.entries(rectangle)) {
-//     console.log(key);
+//     console.log(key); // object.entries se pura key and value pare print kr skte hain
 //   } 
 
 // let rectangle = {
@@ -168,17 +197,19 @@ console.log('chaliye shuru krte hain');
 // console.log(dest);
 
 // #3 - Spread
-// let  src = {
-//   a:10,
-//   b:20,
-//   c:30,
-//   d:40
-// };
+let  src = {
+  a:10,
+  b:20,
+  c:30,
+  d:40
+};
 
-// let dest = {...src};
+let src2 = {value:25};
 
-// console.log(dest);
+let dest = {...src,...src2};
 
-// src.a++;
+console.log(dest);
 
-// console.log(dest);
+src.a++;
+
+console.log(dest);

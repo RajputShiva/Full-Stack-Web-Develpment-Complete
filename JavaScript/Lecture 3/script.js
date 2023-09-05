@@ -1,5 +1,8 @@
-// in-built object
+// in-built object :-
+
 console.log('Hello World');
+
+// Js me String do type ka hota hain 1. String literal (let lastName = 'Singh';) and 2. create by new keyword (let firstName = new String('Shivaji');)
 
 // let lastName = 'Singh';
 
@@ -14,6 +17,7 @@ console.log('Hello World');
 // let message1 = 'This is \n my \' "first" \n Message';
 // console.log(message1);
 
+// Templete Literal - `` isse hum jaise likhate waise hi print hota hain using back-tick(``)
 // let mess = 
 // `This is 
 // my first

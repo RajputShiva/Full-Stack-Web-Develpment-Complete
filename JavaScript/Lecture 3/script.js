@@ -2,7 +2,7 @@
 
 console.log('Hello World');
 
-// Js me String do type ka hota hain 1. String literal (let lastName = 'Singh';) and 2. create by new keyword (let firstName = new String('Shivaji');)
+// Js me String do type ka hota hain 1. String literal (let lastName = 'Singh';) and 2. create by new keyword (let firstName = new String('Shivaji'); ye ek object string crete krti hain new keyword ke help se)
 
 // let lastName = 'Singh';
 
@@ -10,6 +10,9 @@ console.log('Hello World');
 
 // let message = 'This is my first Message';
 // console.log(message);
+
+// let words = message.split(' ');
+// console.log(words);
 
 // let words = message.replace('first','second');
 // console.log(words);
@@ -21,8 +24,10 @@ console.log('Hello World');
 // let mess = 
 // `This is 
 // my first
-// message`;
+// message ${lastName}`;
 // console.log(mess);
+
+// ${kuch bhi likhe jo assign kiye ho pehale ke}; ye back-ticks ke under likhate hain aur ise placeholder bolte hain.
 
 // how to define date
 

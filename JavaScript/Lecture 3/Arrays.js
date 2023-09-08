@@ -3,6 +3,7 @@
 // Array Create
 // let numbers = [1, 4, 5, 7];
 // console.log(numbers);
+// console.log(number[2]);
 
 //End me number add krna.
 // numbers.push(9);
@@ -26,7 +27,7 @@
 // else
 //    console.log("Absent");
 
-  //  console.log(numbers.includes(3)); // ye check krta h number rahega array me to true return krega nhi to false.
+  //  console.log(numbers.includes(3)); // ye check krta h number rahega array me to true return krega nhi to false aur ye best way search krne ka.
 
 // let number1 = [1, 4, 5, 7];
 // console.log(number1.indexOf(4, 2)); // 4 hum search kr rhe h array me aur 2 ka matalab 2nd index se searching start krte hain.
@@ -86,7 +87,7 @@ let m = n;
 
 // n = []; // ise use krne se element remove nhi hoga.
 // n.length = 0; // this is the first ways to remove all elements from the array and this is the best way to remove all elements using this method.
-// n.splice(0, n.length); // this is the second ways to remove all elements from the array.
+// n.splice(0, n.length); // yha 0 ka mtlb hain ki 0 indexing se start krna aur n ki jitni length wha tk numbers ko remove krna hain.// this is the second ways to remove all elements from the array.
 // hum loop se bhi all elements ko remove kr skte hain array me se.
 // this is the third ways to remove all elements from the array.
 // while(n.length > 0){
@@ -183,6 +184,7 @@ let filtered1 = nm1.filter((value) => value >= 0);
 // Mapping Arrays :-
 let nm2 = [7,8,9,10];
 // console.log(nm);
+
 let item1 = nm2.map(function(Shivaji){
   return 'student_no:' + Shivaji;
 });

@@ -2,11 +2,11 @@
 // monitorEvents() use krne se koi event trigar hoga to hum use dekh skte hai is method se
 // unmonitorEvents() isse hum event ko nhi dekh skte hain
 
-// EventTargate ek prakar ka blueprint/interface implemented by object that can receive events and may have listeners for them
-// EventTargate iske under teen methods hote hain aur iska koi parent nhi hota hain ye top level interface hota
+// EventTarget ek prakar ka blueprint/interface implemented by object that can receive events and may have listeners for them
+// EventTarget iske under teen methods hote hain aur iska koi parent nhi hota hain ye top level interface hota
 // 1. addEventListener() 2.removeEventListener() 3. dispatchEvent()
 
-// EventTargate iske do bachhe hain 1.Node and 2.Element
+// EventTarget iske do bachhe hain 1.Node and 2.Element
 // Node ka ek bachha hain Element
 
 // addEventListener() :- we can listen to event or respond to event
@@ -42,7 +42,7 @@
 // Phases of an Event :- 1. Capturing Phase 2. At Target Phase 3. Bubbling Phase
 // By default addEventListener me Bubbling Phase hota hain
 // <event-target>.addEventListener(type(click,double click, scroll,etc), listener(function()), use Capture(true likhane pr capturing ke undar listener trigar ho jata hain))
-// At Target Phase - ise khud pdhna hain mdn pr
+// At Target Phase - ise khud pdhna hain mdn/w3 school pr
 
 // The Event Object :- when an event occurs, addEventListener function is function ko ek event object miltna hain aur is event object ke undar bhut saari jankari hoti hain is event ke baare me.
 // Example :-
@@ -52,6 +52,12 @@
 // const content = document.querySelector('#wrapper');
 // content.addEventListener('click', function(event) {
 //     console.log(event);
+// });
+
+// function ke undar event naam ke alawa bhi kuch bhi likh skte hain jaise shivaji and aur bhi kuch jo tum chaho.
+// const content = document.querySelector('#wrapper');
+// content.addEventListener('click', function(shivaji) {
+//     console.log(shivaji);
 // });
 
 // The Default Action :- ek method .preventDefault() isse hum saare action ko prevent/rok kr skte hain.
@@ -70,10 +76,15 @@
 //     let newElement = document.createElement('p');
 //     newElement.textContent = 'This is para ' + i;
     
-//     newElement.addEventListener('click', );
+//     newElement.addEventListener('click', function(event) {
+//         console.log('I have clicked on pare');
+//    });
 //     myDiv.appendChild(newElement);
-// }
+// };
 // document.body.appendChild(myDiv);
+
+// target:- the target property returns the element where the event occured.
+// the target property is ready-only.
 
 // How to optimizy code
 // let myDiv = document.createElement('div');

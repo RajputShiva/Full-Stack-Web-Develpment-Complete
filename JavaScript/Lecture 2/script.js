@@ -52,11 +52,11 @@ console.log('chaliye shuru krte hain');
 
 // Camelcase Notation -> numberOfStudents  is tarah likhte h camelcase me.
 
-// Constructor function :-
+// Constructor function :- is function se bhi object create krte hain
 
 // Pascal Notation -> first letter of every word is Capital -> NumberOfStudents
 
-// function Rectangle(len,bre){
+// function Rectangle(len,bre) {
 //    this.length = len;
 //    this.breadth = bre;
 //    this.draw = function(){
@@ -178,6 +178,10 @@ console.log('chaliye shuru krte hain');
 // for(let key in src){
 //   dest[key] = src[key];
 // }
+
+// console.log(dest);
+
+// src.a++;
 // console.log(dest);
 
 // #2 - Assign

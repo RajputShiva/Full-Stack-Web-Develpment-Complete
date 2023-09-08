@@ -58,7 +58,7 @@
 // console.log(sum());
 // console.log(sum(1,2,3,4,5));
 // js ek dynamic function hain jisme me hum ek ,do , ya bhut sara ya khali parameter de skte hain.
-// hamare js ke bd ek special argument h isi ke undar ata h console.log(sum(1,2,3,4,5)); exta numbers.
+// hamare js ke undar ek special object hain jise hum argument bolte hain isi ke undar aati hain saari ki saari.
 // function sum(a, b) {
 //     console.log(arguments);
 //     return a+b;
@@ -81,7 +81,7 @@
 // function sum(...args){
 //   console.log(args);
 // }
-// sum(1,2,3,4,5,6); // args me saare value aa jate hain.
+// sum(1,2,3,4,5,6); // args me saare value aa jate hain jo ki ye ek array ke rup me aate hain.
 
 // function sum(n,...args){
 // //   console.log(args);

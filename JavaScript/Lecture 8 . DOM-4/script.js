@@ -18,14 +18,20 @@
 
 // console.log('second');
 
-// Features of Asynchor Code :-
+// API :- application programming interface
+// it's conected to frontend to backend
+// APIs are mechanism that enable two software components to communicate with each other using a set of definitions and protocols.
+// for example :- the weather bureau's software system contains daily weather data.
+// the weather app on your phone "talks" to this system via APIs and shows you daily weather updates on your phone.
+
+// Features of Asynchronous Code :-
 // clear & concise
 // better error handling
-// easier to dbugging
-// aur finde khud kro
+// easier to debugging
+// aur find khud kro
 
-// Promise :- agar ap koi chij background me parely excute/run krna chahate ho js me to promise ka use krte hain.
-// iske undar hum function me do chij use krte hain ek resolve jisse code resolve ho jayega aur ek chij reject hota hain jisse code run nhi hoga error throw krega
+// Promise :- agar ap koi chij background me parallelly excute/run krna chahate ho js me to promise ka use krte hain.
+// iske undar hum function me do chij use krte hain ek resolve jisse code resolve ho jayega aur ek chij reject hota hain jisse code run nhi hoga error throw krega.
 // Example :-
 // let meraPromise = new Promise(function(resolve, reject) {
 //     console.log('I am inside promise');
@@ -42,7 +48,7 @@
 
 // console.log('Pehla');
 
-// promise ke upar me to method lga kste hain 1. agar code fulfill ho jayega to then() use kr skte hain aur agar reject ho jayega to error ke liye catch() lga skte hain
+// promise ke upar me do method lga skte hain 1. agar code fulfill ho jayega to then() use kr skte hain aur agar reject ho jayega to error ke liye catch() lga skte hain
 // let meraPromise = new Promise(function(resolve, reject) {
 //     setTimeout(function() {
 //         console.log('I am inside promise');
@@ -91,6 +97,8 @@
 // }
 // console.log(abcd());
 
+// await - iska use krne ka mtlb hai ki pahele ek promise complete ho jayega aur dusra wait krta rhega jb tk pahela complate na ho jaye uske baad dusra promise start hoga aur phir complate hoga.
+
 // async function utility() {
 
 //     let delhiMausam = new Promise((resolve, reject) => {
@@ -114,7 +122,9 @@
 
 // Fetch API :- agar hum kisi network pr koi data sent ya retrives/receive krna chahta hu tb hum Fetch API ka use krte hain.
 // aur ye hame ek promise return krti hain.
+
 // json() - javascript object notation aur khud se pdhe
+
 // Example of Fetch API :-
 // async function utility() {
 //     let content = await fetch('https://jsonplaceholder.typicode.com/posts/1');
@@ -123,32 +133,38 @@
 // }
 // utility();
 
-// async function helper() {
+// The JSON.stringify() method coverts javascript object into string
+// When sending data to web server the data has to be a string.
+// JSON is a format for storing and transporting data.
+// JSON stands for JavaScript Object Notation.
+// JSON is often used when data is sent from a server to a web page.
 
-//    let options = {
-//     method: 'POST',
-//     body: JSON.stringify({
-//         title: 'Shivaji',
-//         body: 'Tagdi Body',
-//         userId: 1996,
-//         weight: 75,
-//     }),
-//     headers: {
-//         "Content-type": "application/json; charset=UTF-8",
-//      },
-//    };
+async function helper() {
 
-//    let content = await fetch('https://jsonplaceholder.typicode.com/posts', options);
-//    let response = content.json();
-//    return response;
-// }
+   let options = {
+    method: 'POST',
+    body: JSON.stringify({
+        title: 'Shivaji',
+        body: 'Tagdi Body',
+        userId: 1996,
+        weight: 75,
+    }),
+    headers: {
+        "Content-type": "application/json; charset=UTF-8",
+     },
+   };
 
-// async function utility() {
-//     let ans = helper();
-//     console.log(ans);
-// };
+   let content = await fetch('https://jsonplaceholder.typicode.com/posts', options);
+   let response = content.json();
+   return response;
+}
 
-// utility();
+async function utility() {
+    let ans = await helper();
+    console.log(ans);
+};
+
+utility();
 
 
 // Closures :- A closure is a feature of JavaScript that allows inner functions to access the outer scope of a function.

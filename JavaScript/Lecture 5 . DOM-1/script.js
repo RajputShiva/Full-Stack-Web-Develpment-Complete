@@ -1,10 +1,12 @@
 // DOM :- it's stand for Document Object Module.
 // BOM :- it's stand for Browser Object Module.
+// window :- ye ek global object hota hain.
 
 // how to Access Elements ? :- lt's see in below methods.
 
 // getElementById('heading'), :- isse hum id ko get krte hain using this method.
 // it's return a single object.
+// it's called on document object.
 
 // getElementsByClassName('write class name here') :- isse hum class ko get krte hain using this method.
 // it's return a multiple object (array like, not an array).
@@ -30,6 +32,10 @@
 
 // .innerHTML se hum elements ko get bhi kr skte hain aur set bhi kr skte hain.
 // .textContent and .innerText ye dono property .innerHTML ki tarah get and set krte hain elements ko.
+// let texts = document.querySelector('.text');
+// console.log(texts.innerHTML);
+// texts.innerHTML = 'Shivaji Singh';
+// console.log(texts.innerHTML);
 
 // Creating new element/content :- .createElement(); using this method hum element ko create krte hain.
 // Adding new element/content :- .appendChild(); is method se hum log jo create krte hain element ko use add krte hain using this method.
@@ -48,7 +54,7 @@
 // this is not a good way
 // how to create text node :- document.CreateTextNode();
 // let newPara = document.CreateElement('p');
-// let textPara = document.CreateTextNode();
+// let textPara = document.CreateTextNode('I am the text');
 // newPara = appendChild(textPara);
 // content.appendChild(newPara);
 
@@ -78,7 +84,7 @@
 // let textToAdd = '<h3> abcd </h3>
 // let newText = document.createElement('h3');
 // newText.textContent = 'ABCD';
-// content.insertAdjacentElement('beforeBegin',newText);
+// content.insertAdjacentElement('beforeBegin', newText);
 // <h3>ABCD</h3>
 
 // Remove :- .removeChild();  ye exactally opposite hain appendChild() ke.

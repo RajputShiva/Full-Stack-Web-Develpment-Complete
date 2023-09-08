@@ -16,8 +16,8 @@ console.log('hello world');
 
 // object
 // let person = {
-//     firstNmae = 'shivaji',
-//     age = 24;
+//     firstNmae : 'shivaji',
+//     age : 24;
 // }
 
 // there are two ways to access object.
@@ -26,19 +26,27 @@ console.log('hello world');
 //person.age
 
 //2.breacket notation
-// person[age]
+// person['age']
 
 //Arrays :- used to contain a list of items.
 
 // let names = ['love','shivaji','golu'];
 
-// loose equality :-  == (ye btata h ki apka value same hoga tabhi chala jayega)
+// loose equality :-  == (ye btata h ki apka value same hoga tabhi chal jayega)
 // strict equality :-  === (ye btata h ki apka data and value dono same hona chahiye)
 
 // Ternary Operator
 // let age = 20;
 // let status = (age >= 18) ? 'Yes Vote' : 'No Vote';
 // console.log(status);
+
+// Loops :-
+// . For Loop
+// . While Loop
+// . Do-while Loop
+// . What is an infinite Loop?
+// . For-in Loop
+// . For-of Loop
 
 // Loop for
 // for(let i =1; i<=5; i+=1){

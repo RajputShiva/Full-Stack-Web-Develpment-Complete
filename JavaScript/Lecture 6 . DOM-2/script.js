@@ -13,8 +13,8 @@
 // pscudo code :-
 // <event-target.addEventListener (<kon se event ke uper apne listen laya>, <function to run when event happend>); // addEventListener() ke undar ye to property dalte hain.
 // addEventListener() apply krne ke liye ye teen chije pta honi chahiye :-
-// 1. event-target - ye bata hain ki kis listener ke upar ap component lgana hain jaise - document, paragraph, div, artical and many jis pr ap lgana chahate ho listener ye btata hain
-// 2. event-tyle - click, double click, scroll, aur bhi bhut saare hain
+// 1. event-target - ye bata hain ki kis component ke upar ap listener lgana chahate ho jaise - document, paragraph, div, artical and many more jis pr ap lgana chahate ho listener ye btata hain
+// 2. event-type - click, double click, scroll, aur bhi bhut saare hain
 // 3. function - ye wo btata hai ki jaise ap document ke upar click krte hain to apko output kya chahiye wo kam is function ki help se krte hain.
 // Example :-
 // document.addEventListener('click', function() {
@@ -41,10 +41,10 @@
 
 // Phases of an Event :- 1. Capturing Phase 2. At Target Phase 3. Bubbling Phase
 // By default addEventListener me Bubbling Phase hota hain
-// <event-target>.addEventListener(type(click,double click, scroll,etc), listener(function()), use Capture(true likhane pr capturing ke undar listener trigar ho jata hain))
+// <event-target>.addEventListener(type(click,double click, scroll,etc), listener(function()), use Capture(true likhane pr capturing ke undar listener trigar ho jata hain to capturing start ho jata hain))
 // At Target Phase - ise khud pdhna hain mdn/w3 school pr
 
-// The Event Object :- when an event occurs, addEventListener function is function ko ek event object miltna hain aur is event object ke undar bhut saari jankari hoti hain is event ke baare me.
+// The Event Object :- when an event occurs, addEventListener function is function ko ek event object milta hain aur is event object ke undar bhut saari jankari hoti hain is event ke baare me.
 // Example :-
 // html me
 // <p id="wrapper">Hello Everyone</p>
@@ -103,7 +103,7 @@
 // document.body.appendChild(myDiv);
 
 
-
+// nodeName bhi ek property hain ise w3 school se pdhe.
 // let element = document.querySelector('#wrapper');
 // element.addEventListener('click', function(event) {
 //     if(event.target.nodeName === 'SPAN'){

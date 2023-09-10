@@ -2,7 +2,7 @@
 
 console.log('Hello World');
 
-// Js me String do type ka hota hain 1. String literal (let lastName = 'Singh';) and 2. create by new keyword (let firstName = new String('Shivaji'); ye ek object string crete krti hain new keyword ke help se)
+// Js me String do type ka hota hain 1. String literal, ise hum primitive string bolte hain (let lastName = 'Singh';) and 2. create by new keyword (let firstName = new String('Shivaji'); ye ek object string create krti hain new keyword ke help se)
 
 // let lastName = 'Singh';
 

@@ -34,7 +34,7 @@
 // console.log("this took " + (t4-t3) + "ms");
 
 // optimizing your code
-// ek concept hota hain document fragment ye ek light weight document object hota hain. iske upar jo bhi ap addition krte ho wo na to Reflow hota hain aur na hi Repaint hota hain.
+// ek concept(.createDocumentFragment()) hota hain document fragment ye ek light weight document object hota hain. iske upar jo bhi ap addition krte ho wo na to Reflow hota hain aur na hi Repaint hota hain.
 // let fragment = document.createDocumentFragment();
 // for(let i=1; i<=100; i++) {
 //     let newElement = document.createElement('p');
@@ -65,7 +65,7 @@
 
 
 // Synchronous - occuring at the same time
-// Not-Synchronous/asychro - eventListener hota hain, asychro ka mtlb hain ki jo me print krne ke liye bola aur wo kuch time ke bd print hua isi ko hum asychro bolte hain.
+// Not-Synchronous/Asychronous - eventListener hota hain, asychronous ka mtlb hain ki jo me print krne ke liye bola aur wo kuch time ke bd print hua isi ko hum asychronous bolte hain. means(exactlly time pta na ho).
 
 // Event Loop :-
 // ise mdn/w3 school se pdhna hain

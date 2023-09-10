@@ -66,6 +66,8 @@ console.log('chaliye shuru krte hain');
 
 //object creation using constructor function
 
+// this ek current object ko refer krta hain.
+
 // new keyword hame ek impty objct create kr ke deta hain.
 
 // let rectangleObject = new Rectangle(4,6);
@@ -95,6 +97,7 @@ console.log('chaliye shuru krte hain');
 //  console.log('drawing');
 // }`);
 
+// object creation using Rectangle1
 // let rect = new Rectangle1(2,6);
 // console.log(rect);
 
@@ -137,7 +140,7 @@ console.log('chaliye shuru krte hain');
 //   breadth:4
 // };
 
-// for-in loop :-> ye object ke liye use krte hain
+// for-in loop :-> is loop se object ko iterate/print krte hain aur object ke liye hi ye loop use krte hain.
 
 // for (const key in rectangle) {
 //   // keys are reflected through 'key' variable

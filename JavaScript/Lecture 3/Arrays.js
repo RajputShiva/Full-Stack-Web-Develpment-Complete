@@ -126,6 +126,24 @@ let another = [...combinedArr];
 // console.log(another);
 
 // Iterating an Array :-
+// The forEach() method calls a function for each element in an array.
+// The forEach() method is not executed for empty elements.
+// Example :-
+// let sum = 0;
+// const numbers = [65, 44, 12, 4];
+// numbers.forEach(myFunction);
+
+// function myFunction (value) {
+//   sum += value;
+// }
+// console.log(sum);
+
+// Multiply each element
+// function myFunction (value, index, arr) {
+//   arr[index] = value * 10;
+// }
+// document.querySelector('.demo').innerHTML = numbers;
+
 let arr = [10, 20, 30, 40, 50];
 
 // using for-of loop

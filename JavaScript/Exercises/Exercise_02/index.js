@@ -8,7 +8,7 @@ console.log("Answer 1");
 // Define a function called greet that takes a name parameter
     function greet(name) {
         // Use a console.log statement to output a greeting message with the name parameter
-        console.log(`Hello ${name}! How are you doing today?`);
+        // console.log(`Hello ${name}! How are you doing today?`);
     }
   
   // Call the greet function and pass in the name "Shivaji" as an argument
@@ -31,7 +31,7 @@ console.log("Answer 2");
   const result = getSquare(5);
   
   // Log the result to the console
-  console.log(result); // Output: 25
+  // console.log(result); // Output: 25
 
 
 
